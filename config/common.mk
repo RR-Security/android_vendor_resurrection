@@ -73,8 +73,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
     
 # Adaway
-#PRODUCT_COPY_FILES += \
-#    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # Weather Provider
 #PRODUCT_COPY_FILES += \
@@ -187,6 +187,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Exchange support
 PRODUCT_PACKAGES += \
