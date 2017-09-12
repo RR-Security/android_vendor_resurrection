@@ -180,13 +180,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
-# Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
-
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
-
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
