@@ -73,18 +73,18 @@ PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
     
 # Adaway
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # Weather Provider
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk:system/app/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk \
-    vendor/cm/prebuilt/WundergroundWeatherProvider/WundergroundWeatherProvider.apk:system/app/WundergroundWeatherProvider/WundergroundWeatherProvider.apk \
-    vendor/cm/prebuilt/YahooWeatherProvider/YahooWeatherProvider.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/cm/prebuilt/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk:system/app/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk \
+#    vendor/cm/prebuilt/WundergroundWeatherProvider/WundergroundWeatherProvider.apk:system/app/WundergroundWeatherProvider/WundergroundWeatherProvider.apk \
+#    vendor/cm/prebuilt/YahooWeatherProvider/YahooWeatherProvider.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
 
 # KernelAdiutor
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -189,12 +189,12 @@ PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 # Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
+#PRODUCT_PACKAGES += \
+#    MagiskManager
 
 # Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+#PRODUCT_COPY_FILES += \
+#    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Exchange support
 PRODUCT_PACKAGES += \
