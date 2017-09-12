@@ -16,7 +16,7 @@ bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_siz
 # find the appropriate size and set
 define check_and_set_bootanimation
 $(eval TARGET_BOOTANIMATION_NAME := $(shell \
-  if [ -z "$(TARGET_BOOTANIMATION_NAME)" ]; then
+  if [ -z "$(TARGET_BOOTANIMATION_NAME)" ]; then \
     if [ $(1) -le $(TARGET_BOOTANIMATION_SIZE) ]; then \
       echo $(1); \
       exit 0; \
@@ -187,14 +187,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
-
-# Magisk Manager
-#PRODUCT_PACKAGES += \
-#    MagiskManager
-
-# Copy Magisk zip
-#PRODUCT_COPY_FILES += \
-#    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Exchange support
 PRODUCT_PACKAGES += \
