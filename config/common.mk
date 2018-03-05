@@ -78,9 +78,9 @@ PRODUCT_COPY_FILES += \
 
 # Weather Provider
 #PRODUCT_COPY_FILES += \
-#    vendor/cm/prebuilt/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk:system/app/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk \
-#    vendor/cm/prebuilt/WundergroundWeatherProvider/WundergroundWeatherProvider.apk:system/app/WundergroundWeatherProvider/WundergroundWeatherProvider.apk \
-#    vendor/cm/prebuilt/YahooWeatherProvider/YahooWeatherProvider.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
+    vendor/cm/prebuilt/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk:system/app/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk \
+    vendor/cm/prebuilt/WundergroundWeatherProvider/WundergroundWeatherProvider.apk:system/app/WundergroundWeatherProvider/WundergroundWeatherProvider.apk \
+    vendor/cm/prebuilt/YahooWeatherProvider/YahooWeatherProvider.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
 
 # KernelAdiutor
 #PRODUCT_COPY_FILES += \
