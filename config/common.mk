@@ -71,21 +71,11 @@ PRODUCT_COPY_FILES += \
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
+
+# Lightning
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Lightning/Lightning.apk:system/app/Lightning/Lightning.apk
     
-# Adaway
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
-
-# Weather Provider
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk:system/app/OpenWeatherMapWeatherProvider/OpenWeatherMapWeatherProvider.apk \
-    vendor/cm/prebuilt/WundergroundWeatherProvider/WundergroundWeatherProvider.apk:system/app/WundergroundWeatherProvider/WundergroundWeatherProvider.apk \
-    vendor/cm/prebuilt/YahooWeatherProvider/YahooWeatherProvider.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
-
-# KernelAdiutor
-#PRODUCT_COPY_FILES += \
-#    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
-
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
@@ -309,4 +299,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cyngn/product.mk
 
-$(call prepend-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/extra/product.mk)

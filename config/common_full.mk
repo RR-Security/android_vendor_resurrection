@@ -14,6 +14,3 @@ PRODUCT_PACKAGES += \
     PhotoTable \
     PhotoPhase
 
-# Themes
-PRODUCT_PACKAGES += \
-    HexoLibre
