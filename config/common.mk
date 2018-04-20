@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
     
 # Adaway
--PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # Lightning
