@@ -71,10 +71,6 @@ PRODUCT_COPY_FILES += \
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
-    
-# Adaway
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # Lightning
 PRODUCT_COPY_FILES += \
@@ -260,16 +256,10 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
     procrank
-
-# Conditionally build in su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
+    persist.sys.root_access=0
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
